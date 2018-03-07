@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
   margin:0;
   padding:0;
@@ -84,21 +83,4 @@ html,body{
 .ctrl{
   color:gray;
 }
-=======
-#start{
-background:black;
-width:100%;
-height:40%;
-background-align:center;
-position:relative;
-color:white;
-margin-top:-20px;
-display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-input,textarea,select {
-            display: block
-        }
->>>>>>> 358728481686bb8a7013093aa82f467ab168bf77
+
