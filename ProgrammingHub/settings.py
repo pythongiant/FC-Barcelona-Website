@@ -83,6 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
 
 
 
@@ -103,7 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -135,5 +135,4 @@ MEDIA_ROOT=BASE_DIR+"/assets/uploaded-files"
 
 STATIC_ROOT=BASE_DIR+'/static/'
 
-STATIC_ROOT=BASE_DIR+'/assets/'
 
