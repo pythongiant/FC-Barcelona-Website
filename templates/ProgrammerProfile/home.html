@@ -51,8 +51,8 @@
         
         <div class="tab">
             
-            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen" >Users</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Posts</button>
+            <button class="tablinks" onclick="openCity(event, 'London')"  >Users</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')" id="defaultOpen">Posts</button>
         </div>
     
         <div id="London" class="tabcontent">
@@ -67,7 +67,10 @@
         
         <div id="Paris" class="tabcontent">
         {% for i in post %}
-        <center><a href="Posts/{{i.id}}" style="color:black;text-decoration:none;">{{i}}</a></center>
+        <center><a href="Post/{{i.id}}" style="color:black;text-decoration:none;">{{i}}
+        <p style="
+        white-space: nowrap;text-overflow: ellipsis; width:2px; ">{{i.Post}}</p>
+        </a></center>
         {% endfor %}
         </div>
         

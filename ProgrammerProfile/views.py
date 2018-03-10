@@ -24,7 +24,8 @@ def SignUpAction(request):
             description = form.cleaned_data['Description']
             Profile_pic=form.cleaned_data["Profile_Picture"]
             user = User.objects.create_user(username, email, password)
-            Person.objects.create(Name=username,age=age,Description=description,ProfilePic=Profile_pic)
+            user= User.objects.get(username=username)
+            Person.objects.create(Name=user,age=age,Description=description,ProfilePic=Profile_pic)
             
             user=authenticate(username=username,password=password)
             login(request,user)
@@ -41,7 +42,8 @@ def formPost(request):
         if form.is_valid():
             title = form.cleaned_data['title']
             description = form.cleaned_data['Review']
-            Posts.objects.create(Name=title,post=description,author=request.user.username)
+            person=User.objects.get(username=request.user.username)
+            Posts.objects.create(Name=title,post=description,author=person)
     return redirect("/home")            
 
 

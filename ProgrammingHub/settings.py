@@ -135,4 +135,3 @@ MEDIA_ROOT=BASE_DIR+"/assets/uploaded-files"
 
 STATIC_ROOT=BASE_DIR+'/static/'
 
-
