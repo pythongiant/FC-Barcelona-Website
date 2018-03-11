@@ -2,7 +2,7 @@
 {% block content %}  
 <center>
         <h2 id="title">{{article.Name}}</h2>
-        <p>By:{{article.author}}</p>
+        <p>By:{{article.author.Name.username}}</p>
                 <br>
         {% autoescape off %}
        <div id="article"> <p>{{article.post}}</p></div>
