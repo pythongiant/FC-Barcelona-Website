@@ -102,3 +102,9 @@ def article_detail(request,article_id):
 
     }
     return render(request,"ProgrammerProfile/article.html",context)    
+def squad(request):
+    players = Player.objects.all()
+    context={
+        "players":players
+    }
+    return render(request,"ProgrammerProfile/squad.html",context)    

@@ -88,3 +88,13 @@ html,body{
   color:gray;
 }
 
+.player{
+padding:5px;
+display: inline-block;
+
+}
+.player img{
+  width:20vh;
+    
+  height:20vh;
+}

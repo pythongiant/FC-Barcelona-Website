@@ -1,0 +1,21 @@
+{% extends "ProgrammerProfile/base.html" %}
+{% block content %}
+<center><h2>The Squad</h2></center>
+{% load static %}
+{% for player in players %}
+
+<div class ="player">
+    
+<img src="{%static '/uploaded-files/' %}{{player.ProfilePic}}"/><br>
+    {{player.Name}}
+</div>
+
+<div class ="player">
+    
+<img src="{%static '/uploaded-files/' %}{{player.ProfilePic}}"/><br>
+    {{player.Name}}
+</div>
+
+{% endfor %}
+
+{% endblock %}

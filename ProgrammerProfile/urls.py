@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^FormPost',views.formPost,name="post"),
     #form
     url(r'^post',views.post,name="PostForm"),
-    
+    url(r'^squad',views.squad,name="squad"),
     url(r'^(?P<user_id>[0-9]+)/$',views.user_detail,name="user_detail"),
     url(r'^Post/(?P<article_id>[0-9]+)/$',views.article_detail,name="article_detail"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

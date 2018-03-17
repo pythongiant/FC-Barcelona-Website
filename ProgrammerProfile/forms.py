@@ -18,4 +18,4 @@ class Authenticate(forms.Form):
     Password = forms.CharField(widget=forms.PasswordInput(), initial="")
 class posts(forms.Form):
     title=forms.CharField(label='Give a title', max_length=100,initial=" ")
-    Review=forms.CharField(label="Your Article",max_length=1000000000000000,initial="Type your article",widget=forms.Textarea)
+    Review=forms.CharField(label="Your Article",initial="Type your article",widget=forms.Textarea)

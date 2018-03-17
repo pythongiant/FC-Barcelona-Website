@@ -23,3 +23,11 @@ class Posts(models.Model):
     author = models.ForeignKey('Person', on_delete=models.CASCADE)
     def __str__(self):
         return self.Name 
+class Player(models.Model):
+    Name = models.CharField(max_length=255)
+    age=models.IntegerField()
+    CountryOfOrigin=models.CharField(max_length=255)
+    ProfilePic = models.FileField()
+    def __str__(self):
+        return self.Name
+    
